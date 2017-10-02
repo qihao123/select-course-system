@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>注册界面</title>
+</head>
+<style type="text/css">
+body{
+    color: red;
+    text-align:center;
+    }
+    #zhuce,#wangjimima{
+      font-size: 300;
+    }
+    h1{
+      top: 300;
+    }
+    #shuaxin{
+      color: blue;
+      font-size: 30;
+    }
+</style>
+<body background="1.jpg">
+<h1>注册系统</h1>
+
+<form  method="post" action="zhuce.php">
+<br><br><br>
+      <h3><label for="username">学  号:&nbsp</label>
+      <input type="text"  name="username" id="username" value="" /><br><br>
+      <label for="name">姓  名:&nbsp</label>
+      <input type="text"  name="name" id="name" value="" /><br><br>
+      <label for="major">专  业:&nbsp</label>
+      <input type="text"  name="major" id="major" value="" /><br>
+      <label for="pass"><br>密  码:&nbsp</label>
+      <input type="password"  name="pass" id="pass" value="" /><br>
+      <label for="pass"><br>确认密码:</label>
+      <input type="password"  name="pass1" id="pass1" value="" /><br><br>
+      <label for="youxiang">邮  箱：&nbsp</label>
+      <input type="text" name="youxiang" id="youxiang" value=""/><br><br>
+      <label for="yanzhengma">验证码：&nbsp</label>
+      <input type="text" name="yanzhengma" id="yanzhengma" value=""/><br><br>
+      <a href="../3/zhuce.html" id="shuaxin">看不清点我:</a>
+      &nbsp&nbsp
+      <img src="../3/lib/image.func.php" >
+      </h3>
+      <h3>
+      <input type="submit" value="点击注册" name="wancheng" src="zhuce.php">&nbsp
+      <input type="reset" value="重置" name="reset" /></h3></form>
+<form name="返回" action="index.html"> 
+  <input type="submit" value="<<返回登陆" name="返回" scr = "index.html">
+</form>  
+</body>
+</html>

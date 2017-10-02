@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>教师管理系统</title>
+</head>
+<body>
+	<style type="text/css">
+		.backgroundimage{
+			position: absolute;
+			top: 0px;
+			left: 0px;
+		}
+		.tital{
+			position: absolute;
+			top: 0px;
+			left: 800px;
+		}
+		.tital_word{
+			font-size: 100px;
+			color :red;
+		}
+		.wannianli{
+			position: absolute;
+			top: 250px;
+			left: 50px;
+		}
+		.huanying{
+			position: absolute;
+			top: 200px;
+			left: 1700px;
+		}
+		.zhuxiao{
+			position: absolute;
+			top: 255px;
+			left: 1800px;
+		}
+		.addcourse{
+			position: absolute;
+			top: 300px;
+			left: 1500px;
+		}
+		.t_kebiao{
+			position: absolute;
+			top: 250px;
+			left: 500px;
+		}
+		.altercourse{
+			position: absolute;
+			top: 800px;
+			left: 500px;
+		}
+		.t_kebiao_word{
+			position: absolute;
+			top: 180px;
+			left: 450px;
+			color: red;
+			font-size: 20px;
+		}
+		.note{
+			position: absolute;
+			top: 550px;
+			left: 50px;
+		}
+	</style>
+	<div class="backgroundimage">
+	<img src="2.jpg" width="1920" height="200">
+	</div>
+	<div class="tital">
+		<h1 class="tital_word">选课系统教师端</h1>
+	</div>
+	<div class="huanying">
+		<iframe src="huanying.php" width="200" height="50"></iframe>
+	</div>
+	<div class="zhuxiao">
+	<form action="zhuxiao.php">
+		<input type = "submit" value="注销登陆" name="zhuxiao" src="zhuxiao.php">
+	</form></div>
+	<div class="wannianli">
+	<iframe src="wannianli.php" height="240"></iframe>
+	</div>
+	<div class="addcourse">
+		<form method="post" action="addcourse.php">
+			<label for="class_num">课程编号:&nbsp&nbsp</label>
+			<input type="text" name="class_num" id="class_num" value=""><br><br>
+			<label for="class_name">课程名:&nbsp&nbsp&nbsp</label>
+			<input type="text" name="class_name" id="class_name" value=""><br><br>
+			<label for="class_hour">课程学时:&nbsp&nbsp</label>
+			<input type="text" name="class_hour" id="class_hour" value=""><br><br>
+			<label for="class_hour_begin">课程起始时间:</label>
+			<input type="text" name="class_hour_begin" id="class_hour_begin" value=""><br><br>
+			<label for="class_hour_end">课程结束时间:</label>
+			<input type="text" name="class_hour_end" id="class_hour_end" value=""><br><br>
+			<label for="class_score">课程学分:&nbsp&nbsp</label>
+			<input type="text" name="class_score" id="class_score" value=""><br><br>
+			<label for="room">课程所在教室:</label>
+			<input type="text" name="room" id="room" value=""><br><br>&nbsp&nbsp
+			<input type="submit" value="添加课程" name="addcourse" src="addcourse.php">&nbsp&nbsp&nbsp&nbsp
+            <input type="reset" value="重置" name="reset">
+		</form>
+	</div>
+	<div class="altercourse">
+	<form method="post" action="altercourse.php">
+		<label for="altercourse">请输入要删除的课程号：</label>
+		<input type="text" name="altercourse" id="altercourse" value=" ">
+		<input type="submit" value="删除" name="shanchu" src="altercourse.php">
+		</form>
+	</div>
+	<div class="t_kebiao">
+		<iframe src="xk1.php" width="800" height="500"></iframe>
+	</div>
+    <div class="t_kebiao_word">
+		<h2>课程信息：</h2>
+	</div>
+	<div class="note"> 
+	<iframe src="note.php"></iframe>
+	</div>
+</body>

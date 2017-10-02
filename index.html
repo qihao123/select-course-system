@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>登陆界面</title>
+</head>
+<style type="text/css">
+  .jiemian{
+    position: absolute;
+    top: 150px;
+    left: 650px;
+  }
+  .xiamian{
+    position: absolute;
+    top:310px;
+    left: 670px;
+    color: red;
+  }
+  .biaoti{
+    position: absolute;
+    top:30px;
+    left: 725px;
+    color: red;
+  }
+	body{
+		color: red;
+		text-align:center;
+		}
+    #zhuce,#wangjimima{
+      font-size: 300;
+    }
+    h1{
+      top: 300;
+    }
+</style>
+<body background="1.jpg">
+<div class="biaoti">
+<h1>登陆系统</h1>
+</div>
+<form  method="post" action="save.php">
+<br><br><br>
+<div class="jiemian">
+      <h3><tr><td><label for="username">用户名:</label></td><td>
+      <input type="text"  name="username" id="username" value="" /></td><td>
+      <input type="submit" value="登陆"  name="submit" /><br></td><td>
+      <label for="pass"><br>密&nbsp码:</label></td><td>
+      <input type="password"  name="pass" id="pass" value="" /></td><td>
+      <input type="reset" value="重置" name="reset" />
+      <br><br></td><td>
+      <label for="yanzhengma">验证码:</label></td><td>
+      <input type="text" name="yanzhengma" id="yanzhengma" value=""/></td><td>
+      <input type="reset" value="帮助" name="reset" /></td></tr>
+</div>
+<div class="xiamian">
+      <a href="index.html" id="shuaxin">看不清点我:</a>
+      &nbsp&nbsp
+      <img src="../3/lib/image.func.php" alt="index.php" ></h3>
+      <h3><a  id="zhuce" href="zhuce.html"><br>注册</a>&nbsp
+      <a  id="wangjimima" href="login.html">忘记密码</a></h3>
+</div>
+</form>   
+</body>
+</html>

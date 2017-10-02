@@ -1,0 +1,154 @@
+<head>
+    <title>选课系统</title>
+</head>
+<body>
+<style type="text/css">
+    .kecheng{
+        position: absolute;
+        left: 450px;
+        height: 500px;
+        top: 250px;
+    }
+    .wannianli{
+        position: absolute;
+        left: 50px;
+        top: 250px;
+        height: 400px;
+    }
+    .beijing{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    .title{
+        position: absolute;
+        top:0px;
+        left: 300px;
+        font-size: 50px;
+        color: red;
+    }
+    .notetitle{
+        position: absolute;
+        top: 550px;
+        left: 50px;
+        height: 10px;
+    }
+    .note{
+        position: absolute;
+        top: 600px;
+        left: 50px;
+        height:150px
+    }
+    .huanying{
+        position: absolute;
+        top: 200px;
+        left: 1720px;
+        color: red;
+    }
+    .selectcourse{
+        position: absolute;
+        top: 760px;
+        left: 455px;
+    }
+    .sc{
+        position: absolute;
+        top:250px;
+        left: 1300px;
+        height: 600px;
+    }
+    .yixuan{
+        position: absolute;
+        top: 200px;
+        left: 1300px;
+        color: red;
+    }
+    .kexuan{
+        position:absolute;
+        top: 200px;
+        left: 450px;
+        color: red;
+    }
+    .chazhao{
+        position: absolute;
+        top: 760px;
+        left: 880px;
+    }
+    .shanchu{
+        position: absolute;
+        top: 740px;
+        left: 1300px;
+    }
+    .czk{
+        position: absolute;
+        top: 810px;
+        left: 450px;
+    }
+    .zhuxiao{
+        position:absolute;
+        top: 250px;
+        left: 1800px;
+    }
+</style>
+<div class="kecheng">
+<table style='text-align:left;' border='1'>
+<iframe src="xk.php" width="700" height="500"></iframe>
+</table>
+</div>
+<div class="wannianli">
+<iframe src="wannianli.php" height="240"></iframe>
+
+</div>
+<div class="beijing">
+    <img src="2.jpg" width="1920" height="200">
+</div>
+<div class="title">
+    <h1>欢迎进入选课系统</h1>
+</div>
+<h2 class="notetitle">最新通知</h2>
+<div class="note">
+<iframe src="note.php"></iframe>
+</div>
+<div class="huanying">
+    <iframe src="huanying.php" height="50"></iframe>
+</div>
+<form method="post" action="xuanke.php">
+<div class="selectcourse">
+
+    <label for="coursenumber">输入要选择的课程编号:</label></td><td>
+      <input type="text"  name="coursenumber" id="coursenumber" value="" /></td><td>
+      <input type="submit" value="确认选择"  name="submit" src="xuanke.php" />
+</div>
+</form>
+<div class="sc">
+    <iframe src="kebiao.php" width="400" height="450"></iframe>
+</div>
+<div class="yixuan">
+    <h2>已选课程</h2>
+</div>
+<div class="kexuan"><h2>可选课程</h2>
+</div>
+<form method="post" action="chazhao.php">
+<div class="chazhao">
+    <label for="chazhao">输入要查找的课程名:</label></td><td>
+      <input type="text"  name="chazhao" id="chazhao" value="" /></td><td>
+      <input type="submit" value="查找"  name="submit" src="chazhao.php" />
+</div>
+</form>
+<form method="post" action="shanchu.php">
+<div class="shanchu">
+    <label for="delete">输入要删除的课程名:</label></td><td>
+      <input type="text"  name="delete" id="delete" value="" /></td><td>
+      <input type="submit" value="删除"  name="submit" src="shanchu.php" />
+
+</div>
+</form>
+<div class="czk">
+    <iframe src="chazhao1.php" height="100" width="800"></iframe>
+</div>
+<form action="zhuxiao.php">
+<div class="zhuxiao">
+    <input type = "submit" value="注销登陆" name="zhuxiao" src="zhuxiao.php">
+</div>
+</form>
+</body>
+</html>
